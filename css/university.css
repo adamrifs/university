@@ -141,12 +141,12 @@ header i{
 
 .para p{
     padding-top:40px;
-    color:white;
+    color:transparent;
     font-size:14px;
     line-height:25px;
     text-align:center;
     letter-spacing:1px;
-    animation:scale 3s  ease-in-out ;
+    animation:scale 3s 1s ease-in-out forwards ;
 }
 @keyframes scale{
     0%{
@@ -156,6 +156,7 @@ header i{
     100%{
         opacity:1;
         transform:translateX(0);
+        color:white;
     }
 }
 .visitbtn{
