@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>courses</title>
+    <link rel="stylesheet" href="css/courses.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <a href="#" id="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+                <a href="index.html" onclick="hideMenu()">Home</a>
+                <a href="#courses" onclick="hideMenu()">Courses</a>
+                <a href="login.html" onclick="hideMenu()">Login</a>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()" id="list"></i>
+        </nav>
+
+        <div class="mainhead">
+            <h1>
+                Frankfurt University
+            </h1>
+        </div>
+        
+    </main>
+    <section>
+        <div class="heading">
+            <a href="#courses"><h1 id="courses">Our Courses</h1></a>
+            <div class="para">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Non aliquid amet beatae odio qui molestias ratione,<br>
+                 praesentium illo doloribus incidunt quo quod quisquam, 
+                 enim minima corrupti quidem repellendus fugiat dolorem.</p>
+            </div>
+        </div>
+        <div class="container">                            
+                                                     
+            <div class="courses">
+                <img src="images/electronic.jpg">                                  
+                <div class="layer">      
+                    <a href="cos_det_eee.html"><h3>EEE</h3></a>                                         
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/glass3.jpg">                                  
+                <div class="layer">      
+                    <a href="cos_det_civil.html"><h3>Civil</h3></a>                                         
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/mechanic.jpg">                                  
+                <div class="layer">      
+                    <a href="cos_det_mech.html"><h3>Mechanical</h3></a>                                         
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/bscAI.jpg">                                  
+                <div class="layer">      
+                    <a href="cos_det_bscai.html"><h3>B.sc AI</h3></a>                                         
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/bca.jpg">                                  
+                <div class="layer">      
+                    <a href="cos_det_bca.html"><h3>BCA</h3></a>                                         
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/bcom.jpg">                                  
+                <div class="layer">      
+                    <a href="cos_det_bcom.html"><h3>B.com</h3></a>                                         
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/bba.jpg">                                  
+                <div class="layer">      
+                    <a href="cos_det_bba.html"><h3>BBA</h3></a>                                         
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/baenglish.jpg">                                  
+                <div class="layer">      
+                    <a href="cos_det_baeng.html"><h3>BA.English</h3></a>                                         
+                </div>
+            </div>
+            <div class="courses">
+                <img src="images/bscmaths.jpg">                                  
+                <div class="layer">      
+                    <a href="cos_det_math.html"><h3>B.Sc Mathematics</h3></a>                                         
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    <footer>
+        <h4 id="scrolltop">about us</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ducimus voluptate deleniti eum! 
+            Labore tenetur consequuntur ipsa incidunt quisquam? <br>
+            Mollitia architecto optio cumque hic repellendus placeat deserunt facere eius fuga</p>
+
+            <a href="#" id="contact"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            
+            <div class="design">
+                Desingned And Developed by <span>Adam</span>
+            </div>
+    </footer>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-150px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>university</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+   <main>   
+    <header id="navLinks">
+        <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+        <a href="signin.html">Signin</a>
+        <a href="login.html" onclick="hideMenu()">Login</a>
+        <a href="#about us" onclick="hideMenu()">About</a>
+        <a href="#courses" onclick="hideMenu()">Courses</a>
+        <a href="#contact" onclick="hideMenu()">Contact</a>
+    </header>
+    <div class="navicon">
+        <i class="bi bi-list" onclick="showMenu()"></i>
+    </div>
+
+    <div class="heading">
+        <h1>Frankfurt University</h1>
+       
+    </div>
+    <div class="para">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi neque nemo facilis cumque 
+            nostrum doloremque odit quaerat, sapiente quisquam voluptatem, praesentium quod iusto autem! 
+           </p><br>
+           <a href="courses.html" class="visitbtn">Our Courses</a>
+    </div>
+   </main>
+
+   <section>
+    <div class="box">
+        <div class="heading-2">
+            <h1 id="courses">Courses We Offer</h1>
+            <div class="para-2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="cont">
+            <h2>Intermediate</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Illo asperiores vel dolor reiciendis quae aliquam, debitis voluptates 
+                 Placeat, eum laboriosam.</p>
+        </div>
+        <div class="cont">
+            <h2>Degree</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Illo asperiores vel dolor reiciendis quae aliquam, debitis voluptates 
+                 Placeat, eum laboriosam.</p>
+        </div>
+        <div class="cont">
+            <h2>Post Graduation</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Illo asperiores vel dolor reiciendis quae aliquam, debitis voluptates 
+                 Placeat, eum laboriosam.</p>
+        </div>
+    </div>
+
+    <div class="campus">
+        <div class="global-heading">
+            <h1>Our Global Campus</h1>
+        <div class="global-para">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </div>
+    </div>
+</div>
+
+<div class="img-container">
+    <div class="img">
+        <img src="images/glass1.jpg">
+    </div>
+    <div class="img">
+        <img src="images/glass2.jpg">
+    </div>
+    <div class="img">
+        <img src="images/glass3.jpg">
+    </div>
+</div>
+<div class="facilities">
+    <div class="facilities-head">
+        <h1>Our Facilities</h1>
+        <div class="facilities-para">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            </p>
+        </div>
+    </div>
+</div>
+<div class="facilities-cont">
+    <div class="img2">
+        <img src="images/library2.jpg">
+        <div class="heads">
+            <h1>World Class Library</h1>
+            <div class="heads-para">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <div class="img2">
+        <img src= "images/basketball (1).jpg">
+        <div class="heads">
+            <h1>Largest play Ground</h1>
+            <div class="heads-para">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <div class="img2">
+        <img src="images/canteen.jpg">
+        <div class="heads">
+            <h1>Tasty and Healthy Food</h1>
+            <div class="heads-para">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contact">
+    <div class="cont-img">
+        <div class="head-contact">
+            <h1 id="contact">Enroll For our Various Courses Anywhere From The World</h1>
+            <a href="#">CONTACT</a>
+        </div>
+    </div>
+</div>
+<footer>
+    <h4 id="about us">about us</h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio doloremque labore 
+        similique vitae numquam inventore nisi, animi minima,<br>
+         quae enim voluptatum officiis debitis ipsam quidem, totam placeat expedita sint sequi.</p>
+         <div class="icon">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+         </div>
+         <div class="design">
+            Designed And Developed by <span>Adam</span>
+         </div>
+</footer>
+</section>
+
+<script>
+
+    var navlinks = document.getElementById("navLinks");
+    function showMenu(){
+        navlinks.style.right="0";
+    }
+    function hideMenu(){
+        navlinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>

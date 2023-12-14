@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admission</title>
+    <link rel="stylesheet" href="css/form.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <main>
+        <nav>
+            <a href="#" id="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="bi bi-x-lg" onclick="hideMenu()"></i>
+                <a href="index.html" onclick="hideMenu()">Home</a>
+                <a href="courses.html" onclick="hideMenu()">Courses</a>
+                <a href="login.html" onclick="hideMenu()">Login</a>
+            </div>
+            <i class="bi bi-list" onclick="showMenu()" id="list"></i>
+        </nav>
+
+
+        
+        
+    </main>
+    <section>
+
+        <div class="container">
+            <div class="heading">
+                <h1 id="courses">Apply Now</h1>
+            </div>
+            <form autocomplete="off" class="a_form" method='POST'>
+                <p>
+                    <label for="id_Fname">Fname:</label>
+                    <input type="text" name="Fname" maxlength="30" required id="id_Fname">
+                    
+                    
+                  </p>
+                
+                  
+                  <p>
+                    <label for="id_Email_id">Email id:</label>
+                    <input type="email" name="Email_id" maxlength="254" required id="id_Email_id">
+                    
+                    
+                  </p>
+                
+                  
+                  <p>
+                    <label for="id_Ph_no">Ph no:</label>
+                    <input type="number" name="Ph_no" required id="id_Ph_no">
+                    
+                    
+                  </p>
+                
+                  
+                  <p>
+                    <label for="id_S_course">S course:</label>
+                    <select name="S_course" required id="id_S_course">
+                  <option value="" selected>---------</option>
+                
+                  <option value="1">EEE</option>
+                
+                  <option value="2">Civil</option>
+                
+                  <option value="3">Mechanical</option>
+                
+                  <option value="4">B.sc AI</option>
+                
+                  <option value="5">BCA</option>
+                
+                  <option value="6">B.Com</option>
+                
+                  <option value="7">BBA</option>
+                
+                  <option value="8">BA.English</option>
+                
+                  <option value="9">B.Sc Mathematics</option>
+                
+                </select>
+                    
+
+                <div class="submit-section">
+                    <input type="submit" class="button" value="Register">
+                </div>
+            </form>           
+        </div>
+    </section>
+
+    <footer>
+            <a href="#" id="contact"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+            
+            <div class="design">
+                Desingned And Developed by <span>Adam</span>
+            </div>
+    </footer>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right ="0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-150px";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+html{
+    scroll-behavior:smooth;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  
+}
+body{
+
+    font-family:'Poppins', sans-serif;
+}
+main{
+    background-image:linear-gradient(rgba(35,35,35,0.5),rgba(35,35,35,0.5)),url("../images/university2.jpg");
+    background-size:cover;
+    background-position:center;
+    width:100;
+    height:400px;
+}
+nav{
+    width:100%;
+    height:50px;
+    background-color:rgba(35, 35, 35, 0.63);
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    animation:scale 2s ease-in-out ;
+}
+
+@keyframes scale {
+    0%{
+        opacity:0;
+        transform:translateY(-100%);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0);
+    }
+    
+}
+nav a{
+    padding:16px 40px;
+    font-size:14px;
+    color:white;
+    text-decoration:none;
+    transition:0.8s ease-in-out;
+}
+nav a i{
+    font-size:25px;
+    color:red;
+
+}
+nav a:hover{
+    background-color:red;
+}
+ 
+.nav-links i{
+    display:none;
+}
+nav i{
+    display:none;
+
+}
+@media (max-width:700px){
+    nav{
+        background:transparent;
+    }
+    #logo{
+        display: none;
+    }
+    nav a{
+        display:block;
+        padding:20px;
+        padding-bottom:15px;
+    }
+    .nav-links {
+        background-color: red;
+        height:100vh;
+        width:150px;
+        position:fixed;
+        top:0;
+        right:-150px;
+        text-align: left;
+        z-index:2;
+        margin:0;
+        transition:1s ease-in-out;
+    }
+    .nav-links a{
+        padding:25px;
+    }
+    .nav-links i{
+        display:block;
+        color:white;
+        font-size:22px;
+        margin:10px;
+        margin-left:15px;
+        cursor:pointer;
+    }
+    #list{
+        display: block;
+        font-size:25px;
+        color:white;
+        margin:10px;
+        cursor: pointer;
+        position:absolute;
+        top:0;
+        right:5px;
+        /*
+        background-color:rgba(35, 35, 35, 0.63);
+        padding:0px 5px;
+        border-radius:5px;
+        z-index:1;*/
+    }
+}
+.mainhead{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.mainhead h1{
+    color:#ffff;
+    font-size:60px;
+    text-shadow:2px 4px 5px black;
+    animation:mainhead 2s ease-in-out;
+}
+@keyframes mainhead{
+    0%{
+        opacity: 0;
+        transform:scale(0);
+    }
+    100%{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+.heading {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    padding:50px;
+    text-align:center;
+}
+h1{
+    font-size:40px;
+    animation:h1move 2s ease-in-out;     
+}
+.heading a{
+    text-decoration: none;
+    color:black;
+    transition:1s ease-in-out;
+}
+.heading a:hover{
+    transform:scale(1.2);
+}
+@keyframes h1move {
+    0%{
+        opacity:0;
+        transform:translate(0,-100%);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    
+}
+.para p{
+    font-size:15px;
+    animation:pscale 2s ease-in-out ;
+}
+@keyframes pscale{
+    0%{
+        opacity: 0;
+        transform:scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform:scale(1);
+    }
+}
+.container{
+    width: 1000px;
+    height:600px;
+    position:relative;
+    left:250px;
+    margin-left:0px;
+}
+.courses{
+    width:400px;
+    height:300px;
+    position: relative;
+    margin-top:20px;
+    padding-top:20px;
+    margin-left: 20px;
+ 
+}
+.subhead{
+    position: absolute;
+    top:30%;
+    left: 100%;
+    margin-left: 150px;
+}
+.subhead h1{
+    font-size: 80px;
+}
+.subhead span{
+    position:absolute;
+    top:85%;
+    left:0;
+    width:100%;
+    height:2px;
+    background-color:red;
+
+}
+.subpara{
+    position: relative;
+    top:20%;
+    left:0%;
+    width:900px;
+}
+.courses img{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    /*animation:sliding 3s ease-in-out 0.8s 1 ;*/
+}
+.applybtn{
+    position:relative;
+    top:50%;
+    left:41.5%;
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    border:1px solid rgb(255, 255, 255);
+    background-color: red;
+    padding:12px 34px;
+    font-size:13px;
+    transition:0.8s ease-in-out;
+
+}
+.applybtn:hover{
+    background-color:rgb(0, 0, 0);
+    border-color:rgb(0, 0, 0);
+}
+
+@media (max-width:700px){
+    
+    main{
+        height:100vh;
+    }
+    .mainhead{
+        width:100%;
+        height:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+    }
+    .mainhead h1{
+        color:#ffff;
+        font-size:40px;
+        text-shadow:2px 4px 5px black;
+        position:absolute;
+        top:45%;
+    }
+    .container{
+        width: 100%;
+        height: 600px;
+        position:relative;
+        left:0px;
+    
+    }
+    .courses{
+        width: 350px;
+        height: 220px;
+        position: relative;
+        margin: 10px;
+        margin-left: 15px; 
+    }
+    .courses img{
+        width:100%;
+        height:100%;
+        border-radius:10px;
+    }
+    .subhead {
+        transform: translate(-50%, -50%);
+        position: relative;
+        width: fit-content;
+        top: 30%;
+        left: 11%;
+        margin-left: 120px;
+    }
+    .subhead h1 {
+        font-size: 50px;
+    }
+    .subpara {
+        position: relative;
+        top: 20%;
+        left: 0%;
+        width: 100%;
+        margin-left: 10px;
+        font-size: 13px;
+    }
+    .applybtn {
+        position: relative;
+        top: 65%;
+        left: 33%;
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        border: 1px solid rgb(255, 255, 255);
+        background-color: red;
+        padding: 10px 30px;
+        font-size: 13px;
+        transition: 0.8s ease-in-out;
+    }
+    .applybtn:hover{
+        background-color:rgb(0, 0, 0);
+        border-color:rgb(0, 0, 0);
+    }
+    
+}
+/*.courses3 img{
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    animation:slidingright 3s ease-in-out 0.8s 1;
+}*/
+@keyframes sliding {
+    0%{
+        opacity: 0;
+        transform:translate(-500px,0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    
+}
+@keyframes slidingright{
+    0%{
+        opacity: 0;
+        transform:translate(500px,0);
+    }
+    100%{
+        opacity:1;
+        transform:translate(0,0);
+    }
+}
+
+footer{
+    width:100%;
+    text-align: center;
+    padding-top:50px;
+}
+footer h4{
+    padding-top:25px;
+}
+footer p{
+    font-size:12px;
+    color:grey;
+}
+footer a{
+    color:red;
+    font-size:14px;
+    padding:10px;
+}
+.design{
+    padding:20px;
+    font-size:12px;
+    color:grey;
+}
+span{
+    color:black;
+    font-size: 15px;
+}
+@media (max-width:700px){
+    footer p{
+        font-size:10px;
+        color:grey;
+        width:80%;
+        position:relative;
+        left:50%;
+        transform:translate(-50%,0);
+        padding:10px;
+        margin-bottom:20px;
+    }                                             
+    footer h4{
+        font-size:14px;
+    }
+}

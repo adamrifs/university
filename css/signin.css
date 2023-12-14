@@ -1,0 +1,94 @@
+*{
+    box-sizing:border-box
+    }
+    body{
+    background-image: linear-gradient(rgba(12, 11, 11, 0.692), rgba(0, 0, 0, 0.615)),url("https://images.pexels.com/photos/4590385/pexels-photo-4590385.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;
+    }
+    .section{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(255, 254, 254, 0);
+    backdrop-filter:blur(10px);
+    width:350px;
+    height:530px;
+    border-radius:15px;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.5);
+    }
+    .section h4{
+    color: rgb(255, 255, 255);
+    font-size:28px;
+    text-align:center;
+    padding:2px;
+    margin: 20px auto;
+    letter-spacing: 1px;
+    font-weight: 600;
+    }
+    .input-group{
+    width:200px;
+    margin:25px auto;
+    display:flex;
+    flex-direction:column;
+    color:#ffffff;
+    font-family: Poppins;
+    font-weight: 300;
+    }
+    .input-group input{
+    border:none;
+    outline:none;
+    background-color: rgba(255, 255, 255, 0);
+    border-bottom:1px solid #a1a1a19e;
+    transition:0.5s ease-in-out;
+    font-size: 15px;
+    color:white;
+    font-weight:300;
+    letter-spacing: 1px;
+    }
+    .input-group label{
+    margin-top:4px;
+    
+    }
+    .input-group input:focus{
+    border-bottom-color:rgb(0, 0, 0);
+    
+    }
+    .submit-section{
+    text-align:center;
+    }
+    .submit-button{
+    background-color:#090303;
+    font-family:tahoma;
+    letter-spacing: 2px;
+    font-size:14px;
+    width:150px;
+    padding:6px;
+    padding-bottom:10px;
+    color:rgba(255, 255, 255, 0.92);
+    border-radius:5px;
+    border-width:0px;
+    cursor:pointer;
+    transition:0.5s ease-in-out;
+    }
+    .submit-button:hover{
+    background-color:#2f180c;
+    color:#ffffff;
+    box-shadow:2px 2px 12px rgba(0, 0, 0, 0.682);
+    }
+    .input-group input:focus{
+    border-bottom-color:#925936;
+    }
+    .frgt-btn{
+    margin:12px 20px 20px 95px;
+    }
+    .frgt-btn a{
+    text-decoration: none;
+    font-family:tahoma;
+    font-size: 14px;
+    color:black;
+    }
+    
